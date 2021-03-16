@@ -1,0 +1,44 @@
+      io.zeebe.gateway - Starting gateway with configuration {
+  "network" : {
+    "host" : "0.0.0.0",
+    "port" : 26500,
+    "minKeepAliveInterval" : "PT30S"
+  },
+  "cluster" : {
+    "contactPoint" : "lnp-zeebe:26502",
+    "requestTimeout" : "PT15S",
+    "clusterName" : "lnp-zeebe",
+    "memberId" : "lnp-zeebe-gateway-d9fc9cb59-97wff",
+    "host" : "1.1.1.1", #### on purpose ####
+    "port" : 26502,
+    "membership" : {
+      "broadcastUpdates" : false,
+      "broadcastDisputes" : true,
+      "notifySuspect" : false,
+      "gossipInterval" : "PT0.25S",
+      "gossipFanout" : 2,
+      "probeInterval" : "PT1S",
+      "probeTimeout" : "PT0.1S",
+      "suspectProbes" : 3,
+      "failureTimeout" : "PT10S",
+      "syncInterval" : "PT10S"
+    }
+  },
+  "threads" : {
+    "managementThreads" : 1
+  },
+  "monitoring" : {
+    "enabled" : false,
+    "host" : "0.0.0.0",
+    "port" : 9600
+  },
+  "security" : {
+    "enabled" : false,
+    "certificateChainPath" : null,
+    "privateKeyPath" : null
+  },
+  "longPolling" : {
+    "enabled" : true
+  },
+  "initialized" : true
+}
