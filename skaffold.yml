@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2beta12
+kind: Config
+build:
+  artifacts:
+  - image: zeebe-java
+    jib: {}
+deploy:
+ kubectl:
+  defaultNamespace: mkodnani-ns
+  manifests:
+  - deploy.yml
