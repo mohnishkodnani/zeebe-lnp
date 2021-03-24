@@ -1,37 +1,40 @@
+2021-03-24 17:21:56.781 [] [main] INFO
+      io.zeebe.broker.system - Version: 1.0.0-alpha2
+2021-03-24 17:21:56.846 [] [main] INFO
       io.zeebe.broker.system - Starting broker 0 with configuration {
   "network" : {
     "host" : "0.0.0.0",
     "portOffset" : 0,
     "maxMessageSize" : "4MB",
-    "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io",
+    "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io",
     "commandApi" : {
       "host" : "0.0.0.0",
       "port" : 26501,
-      "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io",
+      "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io",
       "advertisedPort" : 26501,
       "address" : "0.0.0.0:26501",
-      "advertisedAddress" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io:26501"
+      "advertisedAddress" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io:26501"
     },
     "internalApi" : {
       "host" : "0.0.0.0",
       "port" : 26502,
-      "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io",
+      "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io",
       "advertisedPort" : 26502,
       "address" : "0.0.0.0:26502",
-      "advertisedAddress" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io:26502"
+      "advertisedAddress" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io:26502"
     },
     "monitoringApi" : {
       "host" : "0.0.0.0",
       "port" : 9600,
-      "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io",
+      "advertisedHost" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io",
       "advertisedPort" : 9600,
       "address" : "0.0.0.0:9600",
-      "advertisedAddress" : "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io:9600"
+      "advertisedAddress" : "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io:9600"
     },
     "maxMessageSizeInBytes" : 4194304
   },
   "cluster" : {
-    "initialContactPoints" : [ "lnp-zeebe-0.lnp-zeebe.mkodnani-ns.svc.33.blah.io:26502" ],
+    "initialContactPoints" : [ "lnp-zeebe-0.lnp-zeebe.srchzeebe.svc.130.blah.io:26502" ],
     "partitionIds" : [ 1, 2, 3 ],
     "nodeId" : 0,
     "partitionsCount" : 3,
@@ -52,7 +55,7 @@
     }
   },
   "threads" : {
-    "cpuThreadCount" : 2,
+    "cpuThreadCount" : 6,
     "ioThreadCount" : 2
   },
   "data" : {
@@ -66,8 +69,8 @@
     "diskUsageCommandWatermark" : 0.97,
     "diskUsageMonitoringInterval" : "PT1S",
     "logSegmentSizeInBytes" : 134217728,
-    "freeDiskSpaceCommandWatermark" : 2293261517,
-    "freeDiskSpaceReplicationWatermark" : 764420506
+    "freeDiskSpaceCommandWatermark" : 2501542625,
+    "freeDiskSpaceReplicationWatermark" : 833847542
   },
   "exporters" : { },
   "gateway" : {
